@@ -1,0 +1,21 @@
+.filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 250px;
+}
+
+.filter div {
+    box-shadow: -3px 73px 9px grey;
+    width: 161px;
+    height: 178px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.filter div img {
+    width: 161px;
+    height: 178px;
+    border-radius: 10px;
+}

@@ -1,0 +1,49 @@
+.filter {
+    margin-bottom: 20px;
+}
+
+.gadgets {
+    margin-top: 5em;
+}
+
+.gadget-collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2em;
+    margin-left: 8.5em;
+}
+
+.gadget {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+    height: 690px;
+    width: 329px;
+}
+
+.gadget img {
+    text-align: center;
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.gadget div {
+    margin-left: 1.1em;
+    margin-top: 1.5em;
+}
+
+.gadget h1 {
+    font-size: 25px;
+}
+
+.gadget p {
+    color: #787885;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 175%;
+}
