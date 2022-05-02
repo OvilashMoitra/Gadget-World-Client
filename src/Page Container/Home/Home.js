@@ -2,6 +2,7 @@ import { faFilter, faFilterCircleXmark } from '@fortawesome/free-solid-svg-icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Filtered from '../../Components/Filtered/Filtered';
+import Navbar from '../../Components/Navbar/Navbar';
 import './Home.css'
 const Home = () => {
 
@@ -32,6 +33,7 @@ const Home = () => {
 
     return (
         <div>
+            <Navbar></Navbar>
             <p className='text-center'><strong>Filter Gadget  <FontAwesomeIcon icon={faFilter}></FontAwesomeIcon></strong></p>
             <FontAwesomeIcon title='clear filter' onClick={clearFilter} icon={faFilterCircleXmark}></FontAwesomeIcon>
             <div className='filter'>
