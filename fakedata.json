@@ -112,3 +112,25 @@
         "description": "Up your photography game with the EOS Rebel T7. Perfect for beginners, this camera bundle offers the essential tools you need to take your SLR skills to new heights — all in one convenient package. No matter where your next photography adventure takes you, count on the EOS Rebel T7's impressive 24.1 Megapixel CMOS sensor and wide ISO range of 100-6400 (H:12800) to capture high-quality images, even in low-light situations.  "
     }
 ]
+[
+    {
+        "sold": 105,
+        "inStock": 400,
+        "reStock": 25
+    }
+]
+const data = [
+    {
+        "name": "sold",
+        "value": 400
+    },
+    {
+        "name": "inStock",
+        "value": 300
+    },
+    {
+        " name": "reStock", value: 300
+    },
+    { name: 'Group D', value: 200
+    },
+];

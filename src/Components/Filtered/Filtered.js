@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Filtered.css'
 const Filtered = ({ gadget }) => {
 
@@ -15,6 +16,7 @@ const Filtered = ({ gadget }) => {
                                 <p>{gadget.description.length > 300 ? gadget.description.slice(0, 300) + '...' : gadget.description}</p>
                                 <p> <strong>Remain Quantity {gadget.quantity} pices</strong></p>
                             </div>
+                            <Link className='stock mx-auto' to={`/updateStock/${gadget._id}`}>Update Stock</Link>
                         </div>
                     </div>
                 </section>

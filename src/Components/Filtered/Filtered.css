@@ -47,3 +47,14 @@
     font-size: 14px;
     line-height: 175%;
 }
+
+.stock {
+    display: block;
+    height: 52px;
+    width: 108px;
+    background-color: black;
+    border-radius: 10px 30px 70px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 2;
+}

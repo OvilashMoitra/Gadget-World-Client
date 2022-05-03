@@ -1,11 +1,11 @@
 import { faFilter, faFilterCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import Chart from '../../Components/Chart/Chart';
 import Filtered from '../../Components/Filtered/Filtered';
 import Navbar from '../../Components/Navbar/Navbar';
 import './Home.css'
 const Home = () => {
-
     const [filteredGadgets, setFilteredGadgets] = useState([]);
     const [gadgets, setGadgets] = useState([]);
     const [filter, setFilter] = useState('');
@@ -58,6 +58,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <Chart></Chart>
         </div >
     );
 };
