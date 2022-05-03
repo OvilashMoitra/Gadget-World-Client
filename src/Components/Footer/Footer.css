@@ -1,0 +1,24 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7px;
+    background-color: navy;
+    padding: 20px 0;
+    color: white;
+}
+
+.contact-icon {
+    margin-left: 5px;
+    box-shadow: 0px 7px 40px grey;
+    width: 2rem;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.footer-about-section p {
+    line-height: 16px;
+}
+
+.submitted {
+    width: 2em;
+}

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Chart from '../../Components/Chart/Chart';
 import Filtered from '../../Components/Filtered/Filtered';
+import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar';
 import './Home.css'
 const Home = () => {
@@ -59,6 +60,7 @@ const Home = () => {
                 </div>
             </div>
             <Chart></Chart>
+            <Footer></Footer>
         </div >
     );
 };
