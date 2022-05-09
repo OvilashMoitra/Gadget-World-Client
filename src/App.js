@@ -4,6 +4,9 @@ import Home from './Page Container/Home/Home';
 import Login from './Page Container/Login/Login';
 import Registration from './Page Container/Registration/Registration';
 import NotFound from './Page Container/NotFound/NotFound';
+import Gadget from './Page Container/Gadget/Gadget';
+import RequireAuth from './Page Container/RequireAuth/RequireAuth';
+import Gadgets from './Page Container/Gadgets/Gadgets';
 
 function App() {
   return (
@@ -11,9 +14,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/updateStock/:id" element={<Home />} />
-        <Route path="login" element={<Login />} />
-        <Route path="registration" element={<Registration />} />
+        <Route
+          path="/gadgets/:id"
+          element={
+            <RequireAuth>
+              <Gadget></Gadget>
+            </RequireAuth>
+          }
+        />
+        <Route path="/gadgets" element={<Gadgets />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

@@ -13,7 +13,7 @@ const Home = () => {
     const [isFiltered, setIsFiltered] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/gadgets?gadget=${filter}`)
+        fetch(`http://localhost:5000/gadgets/filter?gadget=${filter}`)
             .then(res => res.json())
             .then(data => setFilteredGadgets(data));
     }, [filter]);
