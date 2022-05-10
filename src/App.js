@@ -7,6 +7,7 @@ import NotFound from './Page Container/NotFound/NotFound';
 import Gadget from './Page Container/Gadget/Gadget';
 import RequireAuth from './Page Container/RequireAuth/RequireAuth';
 import Gadgets from './Page Container/Gadgets/Gadgets';
+import Blogs from './Page Container/Blogs/Blogs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           }
         />
         <Route path="/gadgets" element={<Gadgets />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<NotFound />} />

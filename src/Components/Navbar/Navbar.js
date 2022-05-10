@@ -37,7 +37,7 @@ const Navbar = () => {
                         <div className="sd-body">
                             <ul>
                                 <li><NavLink className="sd-link" to={`/login`}>Login</NavLink></li>
-                                <li><NavLink className="sd-link" to={`/blog`}>Blogs</NavLink></li>
+                                <li><NavLink className="sd-link" to={`/blogs`}>Blogs</NavLink></li>
                                 <li><a className="sd-link">Menu Item 3</a></li>
                                 <li><a className="sd-link">Menu Item 4</a></li>
                                 <li><a className="sd-link">Menu Item 5</a></li>
