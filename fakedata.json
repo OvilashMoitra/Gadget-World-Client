@@ -4,7 +4,9 @@
         "img": "https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg",
         "price": 1000,
         "category": "laptop",
-        "quantity": 10,
+        "seller": "hp",
+        "stock": 10,
+        "sold": 53,
         "description": "Apple MacBook Pro is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 12GB of RAM. The Apple MacBook Pro packs 512GB of SSD storage."
     },
     {
@@ -12,7 +14,9 @@
         "img": "https://www.ephotozine.com/articles/nikon-d850-dslr-review-31357/images/highres-Nikon-D850-with-lens_1503509096.jpg",
         "price": 2500,
         "category": "camera",
-        "quantity": 20,
+        "seller": "nikon",
+        "stock": 20,
+        "sold": 93,
         "description": "The D850 is Nikon's next-generation high resolution, full-frame DSLR. It features a 45.7 Megapixel BSI CMOS sensor with no optical low-pass filter and an Expeed 5 image processor, which allow for fast burst rates and 4K video capture. The D850 has an ISO range of 64-25,000, expandable to 32-120,400 and a burst rate of 7 fps with continuous AF, and 9 fps with the optional battery grip and EN-EL18a/b battery. You'll find the same AF system on the D850 as on the flagship Nikon D5, which means 153 points, of which 99 are cross-type, and the company's effective 3D Tracking. "
     },
     {
@@ -20,7 +24,9 @@
         "img": "https://images.indulgexpress.com/uploads/user/imagelibrary/2020/12/30/original/MacBookAirM1.jpg",
         "price": 700,
         "category": "laptop",
-        "quantity": 20,
+        "seller": "apple",
+        "stock": 20,
+        "sold": 13,
         "description": "Apple MacBook Air 2020 is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i3 processor and it comes with 8GB of RAM. The Apple MacBook Air 2020 packs 256GB of SSD storage. Graphics are powered by Integrated Graphics Processor."
     },
     {
@@ -28,7 +34,9 @@
         "img": "https://www.dpreview.com/files/p/articles/8634820203/images/stmset1.jpeg",
         "price": 500,
         "category": "camera",
-        "quantity": 20,
+        "seller": "canon",
+        "stock": 20,
+        "sold": 93,
         "description": "Capture every detail with an 18-megapixel Hybrid CMOS AF sensor. The EOS 700D produces low-noise images that can be printed at large sizes or cropped for alternative compositions.Produce Full HD movie projects.Shoot video at 1080p resolution, enjoying the right level of automatic or manual control for you. Hybrid AF technology enables continuous focusing when shooting video, and the EOS 700D supports near-silent Movie Servo AF with compatible STM lenses. Record stereo sound with a built-in or external microphone."
     },
     {
@@ -36,7 +44,9 @@
         "img": "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/iPhone_13_Pro_Max/IMG_0056.jpg",
         "price": 1000,
         "category": "mobile-phone",
-        "quantity": 30,
+        "seller": "apple",
+        "stock": 30,
+        "sold": 39,
         "description": "The iPhone 13 Pro Max is Apple's biggest phone in the lineup with a massive, 6.7 screen that for the first time in an iPhone comes with 120Hz ProMotion display that ensures super smooth scrolling. The benefit of such a gigantic phone is that it also comes with the biggest battery of all iPhone 13 series."
     },
     {
@@ -44,7 +54,9 @@
         "img": "https://i.ytimg.com/vi/sl-Q8N9X--8/maxresdefault.jpg",
         "price": 700,
         "category": "mobile-phone",
-        "quantity": 30,
+        "seller": "apple",
+        "stock": 30,
+        "sold": 63,
         "description": "The iPhone 13 Mini is the successor to Apple's first super mini flagship in recent years, the iPhone 12 Mini. It retains the same 5.4 screen size and the one-handed use friendly form factor, while at the same time bringing a faster Apple A15 Bionic processor. On the camera front, the 13 Mini keeps a wide and an ultra-wide setup, and it does not have a dedicated telephoto zoom camera."
     },
     {
@@ -52,7 +64,9 @@
         "img": "https://i.ytimg.com/vi/t7sOFoS-IRk/maxresdefault.jpg",
         "price": 1400,
         "category": "laptop",
-        "quantity": 30,
+        "seller": "dell",
+        "stock": 30,
+        "sold": 13,
         "description": "Alienware 17 R3 is a Windows 10 laptop with a 17.30-inch display that has a resolution of 1920x1080 pixels. It is powered by a Core i7 processor and it comes with 8GB of RAM. Graphics are powered by Nvidia GeForce GTX 1070."
     },
     {
@@ -60,7 +74,9 @@
         "img": "https://media.wired.com/photos/5c5cc754a94a9659db78cc9e/master/pass/Razer-Blade-Stealth-%5B2019%5D-4K-Display---PNG-(1).jpg",
         "price": 1100,
         "category": "laptop",
-        "quantity": 30,
+        "seller": "razer",
+        "stock": 30,
+        "sold": 113,
         "description": "The Razer blade 15 with NVIDIA GeForce RTX 2070 Max-Q design, graphics provides the ultimate PC gaming experience in a thin and compact laptop. Powered by an 8th Gen Intel Core i7 6 Core processor with speeds up to 4.1GHz and featuring a factory calibrated 15.6 144Hz Full HD display for fast and fluid visuals."
     },
     {
@@ -68,7 +84,9 @@
         "img": "https://dlcdnrog.asus.com/rog/media/1622470414596.jpg",
         "price": 1000,
         "category": "laptop",
-        "quantity": 30,
+        "seller": "asus",
+        "stock": 30,
+        "sold": 73,
         "description": "Asus ROG GL551 is a Windows 10 laptop with a 15.00-inch display that has a resolution of 1920x1080 pixels. It is powered by a Core i7 processor and it comes with 8GB of RAM. The Asus ROG GL551 packs 1TB of HDD storage. Graphics are powered by Nvidia GeForce GTX 950M."
     },
     {
@@ -76,7 +94,9 @@
         "img": "https://www.androidauthority.com/wp-content/uploads/2021/01/Samsung-Galaxy-S21-box-1.jpg",
         "price": 800,
         "category": "mobile-phone",
-        "quantity": 30,
+        "seller": "samsung",
+        "stock": 30,
+        "sold": 23,
         "description": "With Galaxy S21 Ultra, Samsung is offering the best of its powerful S series. It was launched on 14 January 2021. To know more about this phone, let's go through all the features that makes it your next phone in 2021.Amazing Phone Display.This phone has one of the best displays as compare to other androids Smartphone’s. It features 6.8-inch WQHD along with a dynamic AMOLED 2x display. Further, the refresh rate also varies from 10Hz to 120Hz according to the content."
     },
     {
@@ -84,7 +104,9 @@
         "img": "https://www.cnet.com/a/img/resize/5ca1a7dc96aa1bf0dcbbdd847b4298fd167d4b8a/hub/2019/09/24/2e385c9e-58ca-4885-9081-f7ac1b8d7c7a/samsung-galaxy-fold-15.jpg?auto=webp&fit=crop&height=675&width=1200",
         "price": 1800,
         "category": "mobile-phone",
-        "quantity": 30,
+        "seller": "samsung",
+        "stock": 30,
+        "sold": 13,
         "description": "Samsung Galaxy Fold is powered by a 2.84GHz octa-core Qualcomm Snapdragon 855 processor. It comes with 12GB of RAM. The Samsung Galaxy Fold runs Android Pie and is powered by a 4380mAh non-removable battery. The Samsung Galaxy Fold supports wireless charging, as well as Quick Charge 2.0 fast charging."
     },
     {
@@ -92,7 +114,9 @@
         "img": "https://www.xda-developers.com/files/2021/08/Google-Pixel-6-series-portfolio-shot.jpg",
         "price": 1000,
         "category": "mobile-phone",
-        "quantity": 20,
+        "seller": "google",
+        "stock": 20,
+        "sold": 33,
         "description": "Pixel 6 Pro, the completely redesigned, fully loaded Google phone. The Pixel Camera system includes a pro-level telephoto lens with 4x optical zoom. Its main sensor captures 150% more light, bringing vivid color and greater accuracy to photos.4 Pixel’s 6.7-inch Smooth Display can intelligently adjust up to 120Hz for easy scrolling and responsive gaming.5 With the next-gen TitanM2TM security chip, Pixel helps protect you, your data, and your privacy, and keeps you in control. And with the Google Tensor processor, it’s the smartest and fastest Pixel yet – up to 80% faster than Pixel 5.6"
     },
     {
@@ -100,7 +124,9 @@
         "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nikon_D90P8.jpg",
         "price": 2000,
         "category": "camera",
-        "quantity": 20,
+        "seller": "nikon",
+        "stock": 20,
+        "sold": 56,
         "description": "The D90 is the first DSLR with video recording capabilities; it can record 720p high-definition video with monaural sound. However, it does not auto-focus while filming video; to keep a subject in focus, the user must manually track subject motion. Soon after the D90's introduction, many new DSLRs from Nikon and other manufacturers began including video recording as a standard feature.As with other DSLRs, the D90's CMOS sensor captures video frames using a rolling shutter, which may cause skewing artifacts during rapid camera or subject motion. "
     },
     {
@@ -108,7 +134,9 @@
         "img": "https://images.unsplash.com/photo-1533425962554-06f6d8c4dacc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fub258ZW58MHx8MHx8&w=1000&q=80",
         "price": 500,
         "category": "camera",
-        "quantity": 20,
+        "seller": "canon",
+        "sold": 13,
+        "stock": 20,
         "description": "Up your photography game with the EOS Rebel T7. Perfect for beginners, this camera bundle offers the essential tools you need to take your SLR skills to new heights — all in one convenient package. No matter where your next photography adventure takes you, count on the EOS Rebel T7's impressive 24.1 Megapixel CMOS sensor and wide ISO range of 100-6400 (H:12800) to capture high-quality images, even in low-light situations.  "
     }
 ]

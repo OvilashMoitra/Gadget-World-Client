@@ -14,7 +14,8 @@ const Tabl = ({ elem, clear }) => {
             <td>
                 <img src={`${elem.img}`} style={{ width: '150px' }} alt="" />
             </td>
-            <td>{elem.quantity}</td>
+            <td>{elem.stock}</td>
+            <td>{elem.sold}</td>
             <td>
                 <button onClick={() => clear(elem._id)}>Delete</button>
             </td>

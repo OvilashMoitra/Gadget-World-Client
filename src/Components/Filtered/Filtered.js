@@ -14,7 +14,7 @@ const Filtered = ({ gadget }) => {
                                 <h1>{gadget.name}</h1>
                                 <h3>${gadget.price}</h3>
                                 <p>{gadget.description.length > 300 ? gadget.description.slice(0, 300) + '...' : gadget.description}</p>
-                                <p> <strong>Remain Quantity {gadget.quantity} pices</strong></p>
+                                <p> <strong>Remain Quantity {gadget.stock} pices</strong></p>
                             </div>
                             <Link className='stock mx-auto' to={`/gadgets/${gadget._id}`}>Update Stock</Link>
                         </div>

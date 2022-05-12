@@ -1,0 +1,23 @@
+.banner-image {
+    position: relative;
+}
+
+.action {
+    background-color: #000;
+    color: white;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 9%;
+    border-radius: 15px;
+    right: 46%;
+}
+
+.action p {
+    line-height: 2.7;
+}
+
+.action a {
+    color: white;
+    text-decoration: none;
+}

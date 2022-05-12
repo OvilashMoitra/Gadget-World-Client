@@ -8,6 +8,7 @@ import Gadget from './Page Container/Gadget/Gadget';
 import RequireAuth from './Page Container/RequireAuth/RequireAuth';
 import Gadgets from './Page Container/Gadgets/Gadgets';
 import Blogs from './Page Container/Blogs/Blogs';
+import AddNewItem from './Page Container/AddNewItem/AddNewItem';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/addItem" element={<AddNewItem />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
