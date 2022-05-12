@@ -14,7 +14,7 @@ const Footer = () => {
     }
     return (
         <div className='footer'>
-            <div className="footer-about-section ms-3">
+            <div className="footer-about-section">
                 <div>
                     <h1>Gadget World</h1>
                     <p><strong>About</strong></p>
