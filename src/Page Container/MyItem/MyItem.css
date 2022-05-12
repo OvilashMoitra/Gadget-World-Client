@@ -1,0 +1,17 @@
+.mydata {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 50px;
+}
+
+.deleted-item,
+.added-item {
+    height: 580px;
+    overflow-y: scroll;
+}
+
+.table-header {
+    position: sticky;
+    top: 0%;
+}

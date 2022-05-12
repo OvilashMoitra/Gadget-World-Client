@@ -16,9 +16,11 @@ const Tabl = ({ elem, clear }) => {
             </td>
             <td>{elem.stock}</td>
             <td>{elem.sold}</td>
-            <td>
-                <button onClick={() => clear(elem._id)} >Delete</button>
-            </td>
+            {
+                clear ? <td>
+                    <button onClick={() => clear(elem._id)} >Delete</button>
+                </td> : null
+            }
         </tr>
     );
 };

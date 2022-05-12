@@ -9,6 +9,7 @@ import RequireAuth from './Page Container/RequireAuth/RequireAuth';
 import Gadgets from './Page Container/Gadgets/Gadgets';
 import Blogs from './Page Container/Blogs/Blogs';
 import AddNewItem from './Page Container/AddNewItem/AddNewItem';
+import MyItem from './Page Container/MyItem/MyItem';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/addItem" element={<AddNewItem />} />
+        <Route path="/mydata" element={<MyItem />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

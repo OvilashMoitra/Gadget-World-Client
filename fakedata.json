@@ -140,6 +140,31 @@
         "description": "Up your photography game with the EOS Rebel T7. Perfect for beginners, this camera bundle offers the essential tools you need to take your SLR skills to new heights — all in one convenient package. No matter where your next photography adventure takes you, count on the EOS Rebel T7's impressive 24.1 Megapixel CMOS sensor and wide ISO range of 100-6400 (H:12800) to capture high-quality images, even in low-light situations.  "
     }
 ]
+// // <form onSubmit={handleSubmit(onSubmit)}>
+// <label className='text-left'><strong>User Email</strong></label>
+// <br />
+// <input className='form-input' type='email' defaultValue={`${user?.email}`} readOnly disabled {...register("email", { required: true })} /> <br />
+// <label className='text-left'><strong>Name</strong></label>
+// <br />
+// <input className='form-input' placeholder='Enter the name here' {...register("name", { required: true })} /> <br />
+// <label className='text-left'><strong>Product Description</strong></label><br />
+// <textarea className='form-input' placeholder='Please enter theb description here' name="description" id="" cols="10" rows="10" {...register("description", { required: true })}></textarea><br />
+// <label className='text-left'><strong>Image URL</strong></label><br />
+// <input className='form-input' placeholder='Enter the image link' type='url' {...register("img", { required: true })} /> <br />
+// <label className='text-left'><strong>Stock Quantity</strong></label> <br />
+// <input className='form-input' placeholder='Enter the stock' type='number' {...register("stock", { required: true })} /> <br />
+// <label className='text-left'><strong>Seller Name</strong></label> <br />
+// <input className='form-input' placeholder='Enter the seller name' type='text'  {...register("SellerName", { required: true })} /> <br />
+// <label className='text-left'><strong>Category</strong></label>
+// <select {...register("category", { required: true })}  >
+//     <option value="camera">Camera</option>
+//     <option value="mobile-phone">Mobile Phone</option>
+//     <option value="laptop">Laptop</option>
+// </select>
+// <br />
+// {errors.exampleRequired && <span>This field is required</span>}
+// <input className='submit-btn' type="submit" />
+// </form>
 // [
 //     {
 //         "sold": 105,

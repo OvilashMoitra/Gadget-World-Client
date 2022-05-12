@@ -7,11 +7,15 @@ import Navbar from '../../Components/Navbar/Navbar';
 import auth from '../../firebase.init';
 import './AddNewItem.css'
 const AddNewItem = () => {
-    const [user, loading, error] = useAuthState(auth);
-    console.log(user)
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const [user, loading, error] = useAuthState(auth);
+    if (loading) {
+        return
+    }
+    console.log(error)
     const onSubmit = (data) => {
-        console.log(data)
+
+        console.log(data, 'clicked')
         const url = `http://localhost:5000/gadgets`
         fetch(url, {
             method: 'POST',
@@ -35,7 +39,7 @@ const AddNewItem = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <label className='text-left'><strong>User Email</strong></label>
                         <br />
-                        <input className='form-input' type='email' defaultValue={`${user?.email}`} readOnly disabled {...register("email", { required: true })} /> <br />
+                        <input className='form-input' type='email' defaultValue={`${user?.email}`} readOnly {...register("email", { required: true })} /> <br />
                         <label className='text-left'><strong>Name</strong></label>
                         <br />
                         <input className='form-input' placeholder='Enter the name here' {...register("name", { required: true })} /> <br />
@@ -47,6 +51,8 @@ const AddNewItem = () => {
                         <input className='form-input' placeholder='Enter the stock' type='number' {...register("stock", { required: true })} /> <br />
                         <label className='text-left'><strong>Seller Name</strong></label> <br />
                         <input className='form-input' placeholder='Enter the seller name' type='text'  {...register("SellerName", { required: true })} /> <br />
+                        <label className='text-left'><strong>Sold</strong></label> <br />
+                        <input className='form-input' placeholder='Enter the quantity sold' type='number'  {...register("sold", { required: true })} /> <br />
                         <label className='text-left'><strong>Category</strong></label>
                         <select {...register("category", { required: true })}  >
                             <option value="camera">Camera</option>
@@ -55,7 +61,7 @@ const AddNewItem = () => {
                         </select>
                         <br />
                         {errors.exampleRequired && <span>This field is required</span>}
-                        <input className='submit-btn' type="submit" /> <br />
+                        <input className='submit-btn' type="submit" />
                     </form>
                 </div>
                 <ToastContainer></ToastContainer>
