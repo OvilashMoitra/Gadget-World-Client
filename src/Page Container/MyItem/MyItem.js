@@ -13,11 +13,11 @@ const MyItem = () => {
     const [user, loading, error] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mydata`)
+        fetch(`http://localhost:5000/mydeleteddata?mailid=${user?.email}`)
             .then(res => res.json())
             .then(data => setDeletedOwnerProduct(data))
-    }, [])
-    console.log(user?.email)
+    }, [user])
+    console.log(ownerDeletedProduct)
     // if (loading) {
     //     return
     // } else {
@@ -27,7 +27,7 @@ const MyItem = () => {
     // }
     useEffect(() => {
         if (!loading) {
-            fetch(`http://localhost:5000/mydata?mailid=${user?.email}`)
+            fetch(`http://localhost:5000/myaddeddata?mailid=${user?.email}`)
                 .then(res => res.json())
                 .then(data => setownerAddedProduct(data))
         }

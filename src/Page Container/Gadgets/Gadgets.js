@@ -26,7 +26,7 @@ const Gadgets = () => {
         console.log(gadgets)
         console.log(id)
         const item = find(id)
-        const ownerProduct = { ...item, email: user.email }
+        const ownerProduct = { ...item, 'email': user.email }
         console.log(ownerProduct)
         const url = `http://localhost:5000/ownerdata`
         fetch(`http://localhost:5000/gadgets/${id}`, {
