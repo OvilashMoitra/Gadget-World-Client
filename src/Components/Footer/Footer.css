@@ -3,9 +3,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7px;
     background-color: navy;
-    padding: 20px 0;
+    padding: 20px 80px;
     color: white;
-    margin-left: 100px;
+}
+
+.submitted,
+.footeer-links {
+    margin-left: 40px;
 }
 
 .contact-icon {
@@ -24,12 +28,17 @@
     width: 2em;
 }
 
-@media only screen and (max-width: 4800px) {
+@media only screen and (max-width: 480px) {
     .footer {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 0;
         padding: 10px;
 
+    }
+
+    .submitted,
+    .footeer-links {
+        margin-left: 0px;
     }
 
     .footer-about-section,

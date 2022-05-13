@@ -12,7 +12,7 @@ const Chart = () => {
 
 
     return (
-        <div className='d-flex justify-content-center'>
+        <div className='chart-container d-md-flex justify-content-center'>
             <div className="chart">
                 <PieChart width={400} height={400}>
                     <Pie

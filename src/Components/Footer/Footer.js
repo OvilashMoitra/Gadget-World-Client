@@ -21,7 +21,7 @@ const Footer = () => {
                     <p> With its beautiful modern and material design, your desktop will complement it perfectly. Built from a lightweight framework that uses little resources and is compatible with older, less powerful Windows 10 computers. Plus, unlike old classic gadgets, you get the security and peace of mind knowing the app comes from the Microsoft Store.Choose from dozens of gadgets and skins to customize your desktop, with optional gadgets from the built-in store, that will enhance your desktop experience like never before.Get Desktop Gadgets and you'll instantly have access to a suite of useful gadgets, including world clocks, weather, rss feeds, calendars, calculators, CPU monitor, and more.Additional enhancements include various skins, slideshow, stocks, translator, dictionary, internet speed test, and more.</p>
                 </div>
             </div>
-            <div className="footeer-links ms-5">
+            <div className="footeer-links">
                 <div>
                     <p><strong>Information</strong></p>
                     <ul>

@@ -1,5 +1,7 @@
 .filter-container {
-    box-shadow: 10px 10px 10px gray;
+    box-shadow: 6px 10px 30px grey;
+    height: 364px;
+    border-radius: 10px;
 }
 
 .filter {
@@ -22,4 +24,31 @@
     width: 161px;
     height: 178px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .filter-container {
+        padding: 0 10px;
+    }
+
+    .filter {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-left: 0px;
+    }
+
+    .filter div {
+        box-shadow: -3px 42px 8px grey;
+        width: 80px;
+        height: 178px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .filter div img {
+        width: 80px;
+        height: 178px;
+        border-radius: 10px;
+    }
 }
