@@ -10,7 +10,7 @@ const Gadget = () => {
     const [value, setValue] = useState()
     const { stock } = gadget;
     useEffect(() => {
-        const url = `http://localhost:5000/gadgets/${params.id}`
+        const url = `https://desolate-temple-57383.herokuapp.com/gadgets/${params.id}`
         console.log(url)
         fetch(url)
             .then(res => res.json())
@@ -21,7 +21,7 @@ const Gadget = () => {
         const newProduct = { ...gadget, stock: newQuantity }
         //copy all previous data if exist in product and setup new quantity 
         setGadget(newProduct);
-        fetch(`http://localhost:5000/gadget/${params.id}`, {
+        fetch(`https://desolate-temple-57383.herokuapp.com/gadget/${params.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ const Gadget = () => {
         const newProduct = { ...gadget, stock: newQuantity }
         // //copy all previous data if exist in product and setup new quantity 
         setGadget(newProduct);
-        fetch(`http://localhost:5000/gadget/${params.id}`, {
+        fetch(`https://desolate-temple-57383.herokuapp.com/gadget/${params.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ const AddNewItem = () => {
     const onSubmit = (data) => {
 
         console.log(data, 'clicked')
-        const url = `http://localhost:5000/gadgets`
+        const url = `https://desolate-temple-57383.herokuapp.com/gadgets`
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

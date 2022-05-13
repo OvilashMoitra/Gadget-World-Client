@@ -13,7 +13,7 @@ const MyItem = () => {
     const [user, loading, error] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mydeleteddata?mailid=${user?.email}`)
+        fetch(`https://desolate-temple-57383.herokuapp.com/mydeleteddata?mailid=${user?.email}`)
             .then(res => res.json())
             .then(data => setDeletedOwnerProduct(data))
     }, [user])
@@ -21,7 +21,7 @@ const MyItem = () => {
 
     useEffect(() => {
         if (!loading) {
-            fetch(`http://localhost:5000/myaddeddata?mailid=${user?.email}`)
+            fetch(`https://desolate-temple-57383.herokuapp.com/myaddeddata?mailid=${user?.email}`)
                 .then(res => res.json())
                 .then(data => setownerAddedProduct(data))
         }
@@ -36,9 +36,9 @@ const MyItem = () => {
         const item = find(id)
         const ownerProduct = { ...item, 'email': user.email }
         console.log(ownerProduct)
-        const url = `http://localhost:5000/ownerdata`
+        const url = `https://desolate-temple-57383.herokuapp.com/ownerdata`
         if (confirm) {
-            fetch(`http://localhost:5000/gadgets/${id}`, {
+            fetch(`https://desolate-temple-57383.herokuapp.com/gadgets/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

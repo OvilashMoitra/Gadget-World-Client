@@ -17,7 +17,7 @@ const Gadgets = () => {
         return item[0]
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/gadgets`)
+        fetch(`https://desolate-temple-57383.herokuapp.com/gadgets`)
             .then(res => res.json())
             .then(data => setGadgets(data));
     }, []);
@@ -27,9 +27,9 @@ const Gadgets = () => {
         const item = find(id)
         const ownerProduct = { ...item, 'email': user.email }
         console.log(ownerProduct)
-        const url = `http://localhost:5000/ownerdata`
+        const url = `https://desolate-temple-57383.herokuapp.com/ownerdata`
         if (confirm) {
-            fetch(`http://localhost:5000/gadgets/${id}`, {
+            fetch(`https://desolate-temple-57383.herokuapp.com/gadgets/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

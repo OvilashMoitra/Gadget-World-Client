@@ -15,12 +15,12 @@ const Home = () => {
     const [isFiltered, setIsFiltered] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/gadgets/filter?gadget=${filter}`)
+        fetch(`https://desolate-temple-57383.herokuapp.com/gadgets/filter?gadget=${filter}`)
             .then(res => res.json())
             .then(data => setFilteredGadgets(data));
     }, [filter]);
     useEffect(() => {
-        fetch(`http://localhost:5000/service`)
+        fetch(`https://desolate-temple-57383.herokuapp.com/service`)
             .then(res => res.json())
             .then(data => setGadgets(data));
     }, []);

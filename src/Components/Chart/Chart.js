@@ -5,7 +5,7 @@ import './Chart.css'
 const Chart = () => {
     const [chartData, setChartData] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/stockChart`)
+        fetch(`https://desolate-temple-57383.herokuapp.com/stockChart`)
             .then(res => res.json())
             .then(data => setChartData(data));
     }, []);
