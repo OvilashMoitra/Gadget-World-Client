@@ -38,14 +38,13 @@ const Navbar = () => {
                             <ul>
                                 <li><NavLink className="sd-link" to={`/home`}>Home</NavLink></li>
                                 <li><NavLink className="sd-link" to={`/blogs`}>Blogs</NavLink></li>
-                                <li><NavLink className="sd-link" to={`/addItem`}>Add Item</NavLink></li>
-                                <li><a className="sd-link">Menu Item 4</a></li>
-                                <li><a className="sd-link">Menu Item 5</a></li>
-                                <li><a className="sd-link">Menu Item 6</a></li>
-                                <li><a className="sd-link">Menu Item 7</a></li>
-                                <li><a className="sd-link">Menu Item 8</a></li>
                                 {
-                                    !user ? <li><NavLink className="sd-link" to={`/login`}>Login</NavLink></li> : <li className="sd-link"><FontAwesomeIcon onClick={() => signOut(auth)} style={{ width: '18px', marginLeft: "15px", cursor: 'pointer', borderRadius: '50%', background: 'white', height: "2em", paddingRight: "1em" }} className='nav-text text-danger' icon={faSignOut}></FontAwesomeIcon></li>
+                                    user ? <div>
+                                        <li><NavLink className="sd-link" to={`/addItem`}>Add Item</NavLink></li>
+                                        <li><NavLink className="sd-link" to={`/gadgets`}>Manage Item</NavLink></li>
+                                        <li><NavLink className="sd-link" to={`/mydata`}>My Data</NavLink></li>
+                                        <li className="sd-link"><FontAwesomeIcon onClick={() => signOut(auth)} style={{ width: '18px', marginLeft: "15px", cursor: 'pointer', borderRadius: '50%', background: 'white', height: "2em", paddingRight: "1em" }} className='nav-text text-danger' icon={faSignOut}></FontAwesomeIcon></li>
+                                    </div> : <li><NavLink className="sd-link" to={`/login`}>Login</NavLink></li>
                                 }
                             </ul>
                         </div>
