@@ -1,5 +1,5 @@
 ### Gadget-World
-Open [https://gadget-world-7095d.web.app](https://gadget-world-7095d.web.app) to view it in your browser.
+Open [https://gadget-world-7095d.web.app/](https://gadget-world-7095d.web.app/) to view it in your browser.
 * I created the react app first.
 * After creating react app I installed react router, initialized firebase, react bootstrap ,react router hook etc.
 * After that I set up all thefile.
