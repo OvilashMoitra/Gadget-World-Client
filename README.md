@@ -8,14 +8,14 @@ Open [https://photographer-ovilash.web.app/](https://photographer-ovilash.web.ap
 * Finally I deployed my project to firebase.
 
 ### Technology Used in this Project -
-# React
-# Node JS
-# Mongodb 
-# Express JS
-# CSS
-# Bootstrap
-# Firebase
-# Heroku
+* React
+* Node JS
+* Mongodb 
+* Express JS
+* CSS
+* Bootstrap
+* Firebase
+* Heroku
 
 
 
