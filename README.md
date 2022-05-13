@@ -1,3 +1,26 @@
+### Gadget-World
+Open [https://photographer-ovilash.web.app/](https://photographer-ovilash.web.app/) to view it in your browser.
+* I created the react app first.
+* After creating react app I installed react router, initialized firebase, react bootstrap ,react router hook etc.
+* After that I set up all thefile.
+* Then I create components and page containers.
+* After completing one section I commited my code to Github.
+* Finally I deployed my project to firebase.
+
+### Technology Used in this Project -
+# React
+# Node JS
+# Mongodb 
+# Express JS
+# CSS
+# Bootstrap
+# Firebase
+# Heroku
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
