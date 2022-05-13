@@ -27,14 +27,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .filter-container {
-        padding: 0 10px;
-    }
-
     .filter {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-row-gap: 10px;
         margin-left: 0px;
     }
 

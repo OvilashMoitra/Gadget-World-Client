@@ -1,5 +1,5 @@
 .add-form {
-    width: 500px;
+    width: 95vh;
     height: 670px;
     background: #FFFFFF;
     border: 1px solid #95A0A7;
@@ -14,4 +14,28 @@
 
 .add-img img {
     height: 100vh;
+}
+
+@media only screen and (max-width: 480px) {
+    .add-form {
+        width: 95vw;
+        height: 600px;
+        background: #FFFFFF;
+        border: 1px solid #95A0A7;
+        box-shadow: 6px 6px 2px grey;
+        overflow-x: scroll;
+        border-radius: 5px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+        position: static;
+        right: 3%;
+    }
+
+    .form-input {
+        width: 80%;
+        height: 37px;
+        margin: 10px 0;
+    }
+
 }

@@ -1,3 +1,7 @@
+.chart {
+    overflow-x: hidden;
+}
+
 .chart-container {
     box-shadow: 9px 5px 30px grey;
     width: 95vw;

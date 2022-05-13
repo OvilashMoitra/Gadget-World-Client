@@ -32,7 +32,7 @@ const AddNewItem = () => {
             <Navbar></Navbar>
             <div className='d-flex'>
                 <div className="add-img">
-                    <img src={"https://images.unsplash.com/photo-1519335553051-96f1218cd5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlJTIwZ2FkZ2V0c3xlbnwwfHwwfHw%3D&w=1000&q=80"} alt="" />
+                    <img className='d-md-block d-none' src={"https://images.unsplash.com/photo-1519335553051-96f1218cd5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlJTIwZ2FkZ2V0c3xlbnwwfHwwfHw%3D&w=1000&q=80"} alt="" />
                 </div>
                 <div className="add-form my-5">
                     <h3 className='my-2'><strong>Add Item</strong></h3>

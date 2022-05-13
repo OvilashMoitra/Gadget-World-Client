@@ -44,3 +44,26 @@
     height: 2px;
     background: gray;
 }
+
+@media only screen and (max-width: 480px) {
+    .form {
+        width: 95vw;
+        height: 600px;
+        background: #FFFFFF;
+        border: 1px solid #95A0A7;
+        box-shadow: 6px 6px 2px grey;
+        border-radius: 5px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        right: 3%;
+    }
+
+    .form-input {
+        width: 80%;
+        height: 37px;
+        margin: 10px 0;
+    }
+
+}

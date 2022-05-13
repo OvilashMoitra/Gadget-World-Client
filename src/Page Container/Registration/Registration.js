@@ -54,7 +54,7 @@ const Signup = () => {
     return (
         <div className='login-form d-flex'>
             <div className="img">
-                <img src={"https://images.unsplash.com/photo-1519335553051-96f1218cd5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlJTIwZ2FkZ2V0c3xlbnwwfHwwfHw%3D&w=1000&q=80"} style={{ height: '100vh' }} alt="" />
+                <img className='d-md-block d-none' src={"https://images.unsplash.com/photo-1519335553051-96f1218cd5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGxlJTIwZ2FkZ2V0c3xlbnwwfHwwfHw%3D&w=1000&q=80"} style={{ height: '100vh' }} alt="" />
             </div>
             <div className="form my-5">
                 <h3 className='my-3 '><strong>Sign Up</strong></h3>
