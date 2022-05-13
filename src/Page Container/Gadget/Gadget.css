@@ -6,7 +6,7 @@
 }
 
 .update-gadget {
-    height: 80vh;
+    height: 67vh;
     display: flex;
     width: 80vmax;
     border-radius: 15px;
@@ -31,4 +31,59 @@
     flex-direction: column;
     justify-content: stretch;
     margin-top: 28px;
+}
+
+.navigate,
+.action-btn {
+    margin: 15px auto;
+    width: 183px;
+    height: 50px;
+    background-color: rgb(2, 86, 170);
+    border-radius: 10px 25px 21px 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    line-height: 2.5;
+}
+
+.action-btn {
+    margin: 0;
+    background-color: #151d50;
+    display: block;
+    border-radius: 10px 25px 21px 40px;
+}
+
+@media only screen and (max-width: 480px) {
+    .update {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .update-gadget {
+        height: 80vh;
+        flex-direction: column;
+        width: 38vmax;
+        border-radius: 15px;
+        box-shadow: 5px 10px 15px gray;
+        padding: 0 15px;
+    }
+
+    .update-gadget .image {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .update-gadget .image img {
+        height: 90%;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+
 }

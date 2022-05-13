@@ -15,3 +15,22 @@
     position: sticky;
     top: 0%;
 }
+
+@media only screen and (max-width: 480px) {
+    .mydata {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin: 50px;
+    }
+
+    .deleted-item,
+    .added-item {
+        width: 95vw;
+        height: 580px;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+
+
+}

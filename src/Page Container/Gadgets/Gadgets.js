@@ -7,7 +7,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-
+import './Gadgets.css'
 const Gadgets = () => {
     const [gadgets, setGadgets] = useState([]);
     const [user] = useAuthState(auth)
@@ -53,23 +53,25 @@ const Gadgets = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Image</th>
-                        <th>Stock</th>
-                        <th>Sold</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        gadgets.map(elem => <Tabl clear={clear} key={elem._id} elem={elem}></Tabl>)
-                    }
-                </tbody>
-            </Table>
+            <div className="container manageProduct-section">
+                <Table striped bordered hover>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Stock</th>
+                            <th>Sold</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            gadgets.map(elem => <Tabl clear={clear} key={elem._id} elem={elem}></Tabl>)
+                        }
+                    </tbody>
+                </Table>
+            </div>
             <Footer />
         </div>
     );

@@ -27,7 +27,7 @@
         border-radius: 5px;
         margin: 0 auto;
         text-align: center;
-        z-index: 1;
+        z-index: -1;
         position: static;
         right: 3%;
     }

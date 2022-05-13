@@ -71,11 +71,11 @@ const Gadget = () => {
                         <h3>${gadget?.price}</h3>
                         <p>{gadget?.description}</p>
                         <p> <strong>Remain Quantity {gadget?.stock} pices</strong></p>
-                        <div className='d-flex'>
-                            <button onClick={() => removeOne(gadget?._id)}>Delivery</button>
+                        <div className='d-flex flex-direction-column'>
+                            <button onClick={() => removeOne(gadget?._id)} className='action-btn'>Delivery</button>
                             <form onSubmit={restock} className='ms-5'>
-                                <input type="number" name="restock" id="" />
-                                <button type="submit">Restock</button>
+                                <input placeholder='enter the stock here' className='mb-2' type="number" name="restock" id="" />
+                                <button className='action-btn' type="submit">Restock</button>
                             </form>
                         </div>
                     </div>

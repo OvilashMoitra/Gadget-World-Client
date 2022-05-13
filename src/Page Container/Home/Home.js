@@ -1,6 +1,7 @@
 import { faFilter, faFilterCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Banner from '../../Components/Banner/Banner';
 import Chart from '../../Components/Chart/Chart';
 import Filtered from '../../Components/Filtered/Filtered';
@@ -62,6 +63,9 @@ const Home = () => {
                         !isFiltered ? gadgets.map(gadget => <Filtered key={gadget._id} gadget={gadget}></Filtered>) : filteredGadgets.map(gadget => <Filtered key={gadget._id} gadget={gadget}></Filtered>)
                     }
                 </div>
+            </div>
+            <div className='text-center'>
+                <Link to={"/gadgets"} className='navigate'>Manage Inventories</Link>
             </div>
             <Chart></Chart>
             <Footer></Footer>
