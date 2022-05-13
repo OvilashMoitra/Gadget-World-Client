@@ -20,6 +20,7 @@ const Blogs = () => {
                         <Accordion.Header>What is the purpose of jwt and how does it work?</Accordion.Header>
                         <Accordion.Body>
                             JWT means Json Web Token.JWT are a good way of securely transmitting information to the user. JWT consists of three parts: a header, payload, and signature. The header typically consists of two parts: the type of the token, which is JWT, and the algorithm that is used.
+                            In JWT basically the server generates a token (JWT) that certifies the user identity, and sends it to the client.When The client  need data and hit the API for data then the the client will send the token back to the server for , then the server will check the identity and give the data to the particular user.In this way other user can't get the access of other user data.
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="">
