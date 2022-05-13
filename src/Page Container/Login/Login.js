@@ -12,8 +12,7 @@ const Login = () => {
     );
     let navigate = useNavigate();
     let location = useLocation();
-    const [error] = useAuthState(auth)
-    let [user, loading] = useAuthState(auth);
+    let [user, loading, error] = useAuthState(auth);
     const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
     const [errorText, setErrorText] = useState('')
     let from = location.state?.from?.pathname || "/";
@@ -34,6 +33,10 @@ const Login = () => {
         navigate(from, { replace: true });
     }
     const googleSignup = async () => {
+        if (googleError) {
+            toast('Try Again')
+            return
+        }
         await signInWithGoogle()
         navigate(from, { replace: true });
     }
@@ -73,9 +76,7 @@ const Login = () => {
                     <p className='mx-2'>or</p>
                     <div className='line'></div>
                 </div>
-                <ToastContainer></ToastContainer>
                 <button className='submit-btn mt-0' onClick={googleSignup}>Login With Google</button>
-                <ToastContainer />
                 <p onClick={resetPass} className={'text-primary'}>Forget password?</p>
                 <p>New to <strong>Gadget World</strong>?<span><Link to="/registration">Create Account</Link></span> </p>
             </div>

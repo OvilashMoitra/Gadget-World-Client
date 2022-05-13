@@ -30,6 +30,7 @@
         height: 580px;
         overflow-x: scroll;
         overflow-y: scroll;
+        margin: 15px auto;
     }
 
 

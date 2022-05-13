@@ -1,3 +1,4 @@
+import { clear } from '@testing-library/user-event/dist/clear';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
@@ -25,6 +26,7 @@ const AddNewItem = () => {
             .then(res => res.json())
             .then(result => console.log(result))
         toast('Product Added')
+        clear()
     };
 
     return (

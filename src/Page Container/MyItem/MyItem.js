@@ -18,13 +18,7 @@ const MyItem = () => {
             .then(data => setDeletedOwnerProduct(data))
     }, [user])
     console.log(ownerDeletedProduct)
-    // if (loading) {
-    //     return
-    // } else {
-    //     fetch(`http://localhost:5000/mydata?mailid=${user?.email}`)
-    //         .then(res => res.json())
-    //         .then(data => setownerAddedProduct(data))
-    // }
+
     useEffect(() => {
         if (!loading) {
             fetch(`http://localhost:5000/myaddeddata?mailid=${user?.email}`)
@@ -32,31 +26,41 @@ const MyItem = () => {
                 .then(data => setownerAddedProduct(data))
         }
     }, [user])
-    // fetch(`http://localhost:5000/mydata?mailid=${user?.email}`)
-    //     .then(res => res.json())
-    //     .then(data => setownerAddedProduct(data))
-    // fetch(`http://localhost:5000/mydata`)
-    //     .then(res => res.json())
-    //     .then(data => setDeletedOwnerProduct(data))
-    // fetch(`http://localhost:5000/mydata?mailid=${user?.email}`)
-    //     .then(res => res.json())
-    //     .then(data => setownerAddedProduct(data))
+    const find = (id) => {
+        const item = ownerAddedProduct.filter(elem => elem._id === id)
+        return item[0]
+    }
 
     const clear = (id) => {
-        fetch(`http://localhost:5000/gadgets/${id}`, {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            },
+        const confirm = window.confirm('Want to delete?')
+        const item = find(id)
+        const ownerProduct = { ...item, 'email': user.email }
+        console.log(ownerProduct)
+        const url = `http://localhost:5000/ownerdata`
+        if (confirm) {
+            fetch(`http://localhost:5000/gadgets/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
 
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                const remaining = ownerAddedProduct.filter(product => product._id !== id);
-                setownerAddedProduct(remaining)
-                toast('Product deleted')
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = ownerAddedProduct.filter(product => product._id !== id);
+                    const deletedProduct = ownerAddedProduct.filter(product => product._id === id);
+                    setownerAddedProduct(remaining)
+                    const newDeletedData = [...ownerDeletedProduct, deletedProduct]
+                    setDeletedOwnerProduct(newDeletedData)
+                    toast('Product deleted')
+                })
+            fetch(url, {
+                method: 'POST',
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(ownerProduct)
+            })
+        }
     }
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Tabl from '../../Components/Table/Table';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -23,31 +23,33 @@ const Gadgets = () => {
     }, []);
 
     const clear = (id) => {
-        console.log(gadgets)
-        console.log(id)
+        const confirm = window.confirm('Want to delete?')
         const item = find(id)
         const ownerProduct = { ...item, 'email': user.email }
         console.log(ownerProduct)
         const url = `http://localhost:5000/ownerdata`
-        fetch(`http://localhost:5000/gadgets/${id}`, {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            },
+        if (confirm) {
+            fetch(`http://localhost:5000/gadgets/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
 
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                const remaining = gadgets.filter(service => service._id !== id);
-                setGadgets(remaining)
-                toast('Product deleted')
             })
-        fetch(url, {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify(ownerProduct)
-        })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = gadgets.filter(service => service._id !== id);
+                    setGadgets(remaining)
+                    toast('Product deleted')
+                })
+            fetch(url, {
+                method: 'POST',
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(ownerProduct)
+            })
+        }
+
     }
 
     return (
@@ -71,6 +73,9 @@ const Gadgets = () => {
                         }
                     </tbody>
                 </Table>
+            </div>
+            <div className='text-center'>
+                <Link to={"/addItem"} className='navigate'>Add Product</Link>
             </div>
             <Footer />
         </div>

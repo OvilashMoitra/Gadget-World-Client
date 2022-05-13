@@ -29,8 +29,16 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
-        <Route path="/addItem" element={<AddNewItem />} />
-        <Route path="/mydata" element={<MyItem />} />
+        <Route path="/addItem" element={
+          <RequireAuth>
+            <AddNewItem />
+          </RequireAuth>
+        } />
+        <Route path="/mydata" element={
+          <RequireAuth>
+            <MyItem></MyItem>
+          </RequireAuth>
+        } />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
