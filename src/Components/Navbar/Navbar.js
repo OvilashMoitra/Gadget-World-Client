@@ -38,6 +38,7 @@ const Navbar = () => {
                             <ul>
                                 <li><NavLink className="sd-link" to={`/home`}>Home</NavLink></li>
                                 <li><NavLink className="sd-link" to={`/blogs`}>Blogs</NavLink></li>
+                                <li><NavLink className="sd-link" to={`/about`}>About</NavLink></li>
                                 {
                                     user ? <div>
                                         <li><NavLink className="sd-link" to={`/addItem`}>Add Item</NavLink></li>

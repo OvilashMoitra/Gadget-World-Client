@@ -10,6 +10,7 @@ import Gadgets from './Page Container/Gadgets/Gadgets';
 import Blogs from './Page Container/Blogs/Blogs';
 import AddNewItem from './Page Container/AddNewItem/AddNewItem';
 import MyItem from './Page Container/MyItem/MyItem';
+import About from './Page Container/About/About';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <MyItem></MyItem>
           </RequireAuth>
         } />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

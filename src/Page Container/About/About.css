@@ -1,0 +1,11 @@
+.image img {
+    border-radius: 50%;
+    width: 45%;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
